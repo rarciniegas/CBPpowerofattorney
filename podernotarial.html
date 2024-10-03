@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones para Completar el Poder Notarial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .title {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instrucciones para Completar el Poder Notarial</h1>
+    <div class="title" onclick="toggleContent('einContent')">1. EIN</div>
+    <div class="content" id="einContent">
+        Un Número de Identificación del Empleador (EIN) es un número único de nueve dígitos asignado por el IRS a las empresas en los Estados Unidos. También se conoce como Número de Identificación Fiscal Federal y se utiliza para identificar una entidad comercial a efectos fiscales. El EIN es necesario para tareas como la presentación de declaraciones de impuestos comerciales, la apertura de una cuenta bancaria empresarial y la contratación de empleados. Es esencialmente como un número de Seguro Social para las empresas.
+    </div>
+
+    <div class="title" onclick="toggleContent('tipoContent')">2. Tipo de Empresa</div>
+    <div class="content" id="tipoContent">
+        Según el IRS, existen varios tipos de corporaciones en los Estados Unidos. Los más comunes son:
+        <ul>
+            <li><strong>Corporación C (C Corp)</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Es el tipo estándar de corporación. Es una entidad legal separada de sus propietarios, lo que significa que puede ser gravada y ser legalmente responsable de forma independiente.</li>
+                    <li><strong>Tributación</strong>: Sujeta a "doble tributación": la corporación paga impuestos sobre las ganancias y los accionistas también pagan impuestos sobre los dividendos.</li>
+                    <li><strong>Mejor para</strong>: Empresas más grandes con múltiples accionistas o aquellas que buscan inversión de capital de riesgo o salir a la bolsa.</li>
+                </ul>
+            </li>
+            <li><strong>Corporación S (S Corp)</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Una corporación que elige pasar ingresos, pérdidas, deducciones y créditos a los accionistas para fines fiscales federales.</li>
+                    <li><strong>Tributación</strong>: Evita la doble tributación permitiendo que los ingresos "pasen" a los accionistas, quienes los informan en sus declaraciones de impuestos personales.</li>
+                    <li><strong>Requisitos</strong>: Limitada a 100 accionistas, los accionistas deben ser ciudadanos o residentes de EE. UU., solo se permite una clase de acciones.</li>
+                    <li><strong>Mejor para</strong>: Pequeñas empresas que desean la protección legal de una corporación pero con las ventajas fiscales de una sociedad.</li>
+                </ul>
+            </li>
+            <li><strong>Compañía de Responsabilidad Limitada (LLC)</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Aunque técnicamente no es una corporación, una LLC es una estructura legal flexible que ofrece la responsabilidad limitada de una corporación con los beneficios fiscales de una sociedad.</li>
+                    <li><strong>Tributación</strong>: Las LLC pueden elegir ser gravadas como una propiedad unipersonal, sociedad, corporación C o corporación S según sus necesidades.</li>
+                    <li><strong>Mejor para</strong>: Pequeñas empresas que buscan flexibilidad en la gestión y tributación.</li>
+                </ul>
+            </li>
+            <li><strong>Corporación Sin Fines de Lucro</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Formada para perseguir objetivos caritativos, educativos, religiosos u otros orientados al público y debe cumplir con requisitos específicos para mantener el estado de exención de impuestos bajo la Sección 501(c)(3) del IRS.</li>
+                    <li><strong>Tributación</strong>: Exenta de impuestos, lo que significa que no pagan impuestos sobre la renta federal sobre sus ingresos, siempre que estén relacionados con su misión.</li>
+                    <li><strong>Mejor para</strong>: Organizaciones centradas en misiones caritativas, religiosas o educativas.</li>
+                </ul>
+            </li>
+            <li><strong>Corporación de Servicios Personales (PSC)</strong>
+                <ul>
+                    <li><strong>Descripción</strong>: Una corporación que presta servicios en campos específicos como derecho, contabilidad, consultoría y servicios de salud.</li>
+                    <li><strong>Tributación</strong>: Sujeta a una tasa impositiva corporativa fija del 21%. Los propietarios que prestan servicios deben informar los ingresos como compensación.</li>
+                    <li><strong>Mejor para</strong>: Corporaciones donde la mayor parte de la actividad es realizada por los propios propietarios, típicamente en industrias de servicios profesionales.</li>
+                </ul>
+            </li>
+        </ul>
+        Estas estructuras brindan diferentes beneficios fiscales, legales y financieros dependiendo de las necesidades de la empresa.
+    </div>
+
+    <div class="title" onclick="toggleContent('fechaContent')">3. Fecha</div>
+    <div class="content" id="fechaContent">
+        <!-- Content for Fecha -->
+    </div>
+
+    <div class="title" onclick="toggleContent('nombreContent')">4. Nombre</div>
+    <div class="content" id="nombreContent">
+        En esta sección, ingrese el <strong>nombre legal de la corporación</strong> registrado en el estado. Este es el nombre oficial que se utiliza en documentos legales, presentaciones y contratos, y debe coincidir exactamente con el nombre en sus documentos de constitución.
+    </div>
+
+    <div class="title" onclick="toggleContent('dbaContent')">5. DBA</div>
+    <div class="content" id="dbaContent">
+        En esta sección, ingrese el <strong>nombre comercial (DBA)</strong> si la corporación opera bajo un nombre diferente al nombre legal. Este es el nombre que la corporación utiliza en la publicidad, letreros o en las operaciones diarias, y debe coincidir con el nombre DBA registrado ante las autoridades estatales o locales.
+    </div>
+
+    <div class="title" onclick="toggleContent('estadoContent')">6. Estado</div>
+    <div class="content" id="estadoContent">
+        En esta sección, ingrese el <strong>estado de constitución</strong>. Este es el estado de EE. UU. donde la corporación fue legalmente formada y registrada. Debe coincidir con el estado que figura en sus documentos de constitución.
+    </div>
+
+    <div class="title" onclick="toggleContent('lugarContent')">7. Lugar de Negocios</div>
+    <div class="content" id="lugarContent">
+        En esta sección, ingrese la <strong>dirección legal de la corporación</strong>. Esta es la dirección oficial donde la corporación está registrada, tal como se indica en sus documentos de constitución. Puede ser la oficina principal o la dirección de un agente registrado, dependiendo de la configuración de la corporación.
+    </div>
+
+    <div class="title" onclick="toggleContent('nombre2Content')">8. Nombre</div>
+    <div class="content" id="nombre2Content">
+        En esta sección, ingrese el <strong>nombre legal de la corporación</strong> registrado en el estado. Este es el nombre oficial que se utiliza en documentos legales, presentaciones y contratos, y debe coincidir exactamente con el nombre en sus documentos de constitución.
+    </div>
+
+    <div class="title" onclick="toggleContent('firmaContent')">9. Firma</div>
+    <div class="content" id="firmaContent">
+        <!-- Content for Firma -->
+    </div>
+
+    <div class="title" onclick="toggleContent('capacidadContent')">10. Capacidad</div>
+    <div class="content" id="capacidadContent">
+        En una corporación, el <strong>poder notarial (POA)</strong> generalmente puede ser firmado por alguien con la autoridad legal para obligar a la corporación, lo que generalmente incluye:
+        <ul>
+            <li><strong>Oficiales</strong>
+                <ul>
+                    <li>CEO, Presidente, CFO o Vicepresidente: Estos altos funcionarios corporativos suelen tener la autoridad para ejecutar documentos importantes, incluido un POA, en nombre de la corporación.</li>
+                </ul>
+            </li>
+            <li><strong>Directores</strong>
+                <ul>
+                    <li>Junta Directiva: En algunos casos, un POA puede necesitar ser autorizado o aprobado por la junta directiva, particularmente si los poderes otorgados son significativos o están fuera del alcance habitual de la gestión.</li>
+                </ul>
+            </li>
+            <li><strong>Empleados o Agentes Autorizados</strong>
+                <ul>
+                    <li>Secretario Corporativo u Otros Funcionarios Designados: La junta o los estatutos corporativos pueden designar a ciertas personas, como un secretario corporativo u otros funcionarios, para firmar un POA en nombre de la corporación.</li>
+                </ul>
+            </li>
+            <li><strong>Apoderados</strong>
+                <ul>
+                    <li>Una corporación puede autorizar a una persona para actuar como apoderado, otorgándole el poder de actuar en nombre de la corporación mediante un POA. Esta persona no necesita ser un oficial, pero debe ser designada formalmente.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="title" onclick="toggleContent('nombreCompletoContent')">11. Nombre Completo</div>
+    <div class="content" id="nombreCompletoContent">
+        <!-- Content for Nombre Completo -->
+    </div>
+
+    <div class="title" onclick="toggleContent('telefonoContent')">12. Teléfono</div>
+    <div class="content" id="telefonoContent">
+        <!-- Content for Teléfono -->
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                // Hide all contents
+                const allContents = document.querySelectorAll('.content');
+                allContents.forEach((el) => el.style.display = "none");
+                // Show the selected content
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
