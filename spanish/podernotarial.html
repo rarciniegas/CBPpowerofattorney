@@ -4,41 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrucciones para Completar el Poder Notarial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            text-align: center;
-        }
-        .title {
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .content {
-            display: none;
-            padding: 15px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <h1>Instrucciones para Completar el Poder Notarial</h1>
-    <div class="title" onclick="toggleContent('einContent')">1. EIN</div>
+    <h2 onclick="toggleContent('einContent')">1. EIN</h2>
     <div class="content" id="einContent">
         Un Número de Identificación del Empleador (EIN) es un número único de nueve dígitos asignado por el IRS a las empresas en los Estados Unidos. También se conoce como Número de Identificación Fiscal Federal y se utiliza para identificar una entidad comercial a efectos fiscales. El EIN es necesario para tareas como la presentación de declaraciones de impuestos comerciales, la apertura de una cuenta bancaria empresarial y la contratación de empleados. Es esencialmente como un número de Seguro Social para las empresas.
     </div>
 
-    <div class="title" onclick="toggleContent('tipoContent')">2. Tipo de Empresa</div>
+    <h2 onclick="toggleContent('tipoContent')">2. Type of Company</h2>
     <div class="content" id="tipoContent">
         Según el IRS, existen varios tipos de corporaciones en los Estados Unidos. Los más comunes son:
         <ul>
@@ -82,42 +57,42 @@
         Estas estructuras brindan diferentes beneficios fiscales, legales y financieros dependiendo de las necesidades de la empresa.
     </div>
 
-    <div class="title" onclick="toggleContent('fechaContent')">3. Fecha</div>
+    <h2 onclick="toggleContent('fechaContent')">3. Date</h2>
     <div class="content" id="fechaContent">
         <!-- Content for Fecha -->
     </div>
 
-    <div class="title" onclick="toggleContent('nombreContent')">4. Nombre</div>
+    <h2 onclick="toggleContent('nombreContent')">4. Name</h2>
     <div class="content" id="nombreContent">
         En esta sección, ingrese el <strong>nombre legal de la corporación</strong> registrado en el estado. Este es el nombre oficial que se utiliza en documentos legales, presentaciones y contratos, y debe coincidir exactamente con el nombre en sus documentos de constitución.
     </div>
 
-    <div class="title" onclick="toggleContent('dbaContent')">5. DBA</div>
+    <h2 onclick="toggleContent('dbaContent')">5. DBA</h2>
     <div class="content" id="dbaContent">
         En esta sección, ingrese el <strong>nombre comercial (DBA)</strong> si la corporación opera bajo un nombre diferente al nombre legal. Este es el nombre que la corporación utiliza en la publicidad, letreros o en las operaciones diarias, y debe coincidir con el nombre DBA registrado ante las autoridades estatales o locales.
     </div>
 
-    <div class="title" onclick="toggleContent('estadoContent')">6. Estado</div>
+    <h2 onclick="toggleContent('estadoContent')">6. State</h2>
     <div class="content" id="estadoContent">
         En esta sección, ingrese el <strong>estado de constitución</strong>. Este es el estado de EE. UU. donde la corporación fue legalmente formada y registrada. Debe coincidir con el estado que figura en sus documentos de constitución.
     </div>
 
-    <div class="title" onclick="toggleContent('lugarContent')">7. Lugar de Negocios</div>
+    <h2 onclick="toggleContent('lugarContent')">7. Place of Business</h2>
     <div class="content" id="lugarContent">
         En esta sección, ingrese la <strong>dirección legal de la corporación</strong>. Esta es la dirección oficial donde la corporación está registrada, tal como se indica en sus documentos de constitución. Puede ser la oficina principal o la dirección de un agente registrado, dependiendo de la configuración de la corporación.
     </div>
 
-    <div class="title" onclick="toggleContent('nombre2Content')">8. Nombre</div>
+    <h2 onclick="toggleContent('nombre2Content')">8. Nombre</h2>
     <div class="content" id="nombre2Content">
         En esta sección, ingrese el <strong>nombre legal de la corporación</strong> registrado en el estado. Este es el nombre oficial que se utiliza en documentos legales, presentaciones y contratos, y debe coincidir exactamente con el nombre en sus documentos de constitución.
     </div>
 
-    <div class="title" onclick="toggleContent('firmaContent')">9. Firma</div>
+    <h2 onclick="toggleContent('firmaContent')">9. Signature</h2>
     <div class="content" id="firmaContent">
         <!-- Content for Firma -->
     </div>
 
-    <div class="title" onclick="toggleContent('capacidadContent')">10. Capacidad</div>
+    <h2 onclick="toggleContent('capacidadContent')">10. Capacity</h2>
     <div class="content" id="capacidadContent">
         En una corporación, el <strong>poder notarial (POA)</strong> generalmente puede ser firmado por alguien con la autoridad legal para obligar a la corporación, lo que generalmente incluye:
         <ul>
@@ -144,29 +119,32 @@
         </ul>
     </div>
 
-    <div class="title" onclick="toggleContent('nombreCompletoContent')">11. Nombre Completo</div>
+    <h2 onclick="toggleContent('nombreCompletoContent')">11. Full Name</h2>
     <div class="content" id="nombreCompletoContent">
         <!-- Content for Nombre Completo -->
     </div>
 
-    <div class="title" onclick="toggleContent('telefonoContent')">12. Teléfono</div>
+    <h2 onclick="toggleContent('telefonoContent')">12. Phone</h2>
     <div class="content" id="telefonoContent">
         <!-- Content for Teléfono -->
     </div>
 
-    <script>
-        function toggleContent(contentId) {
-            const content = document.getElementById(contentId);
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                // Hide all contents
-                const allContents = document.querySelectorAll('.content');
-                allContents.forEach((el) => el.style.display = "none");
-                // Show the selected content
-                content.style.display = "block";
-            }
-        }
-    </script>
+     <!-- Embed the video -->
+     <div class="video-container">
+        <h2>Mira el tutorial en video sobre el Poder Notarial</h2>
+        <iframe src="https://www.youtube.com/embed/X6wWis_uy8I" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add the PDF download link -->
+    <div class="pdf-container">
+        <h2>Descargar el Poder Notarial</h2>
+        <a href="../pdf/ITBF_Poder_interactivo.pdf" target="_blank">Descargar el Poder Notarial PDF</a>
+    </div>
+
+     <div class="link-container">
+        <a href="../index.html">Volver a la Página Principal</a>
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

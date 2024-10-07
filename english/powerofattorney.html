@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power of Attorney Instructions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        h2 {
-            cursor: pointer;
-            color: #007BFF;
-            margin: 15px 0;
-        }
-
-        h2:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            display: none;
-            margin: 10px 0 20px 0;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <h1>Instructions for Completing the Power of Attorney</h1>
@@ -136,6 +111,18 @@
         (Information about the phone number to be filled in.)
     </div>
 
+        <!-- Embed the video -->
+        <div class="video-container">
+            <h2>Watch the Power of Attorney Video Tutorial</h2>
+            <iframe src="https://www.youtube.com/embed/1F8lV8VLn3k" allowfullscreen></iframe>
+        </div>
+
+         <!-- Add the PDF download link -->
+    <div class="pdf-container">
+        <h2>Download Power of Attorney</h2>
+        <a href="../pdf/ITBF_Power_of_Attorney_interactive.pdf" target="_blank">Download the Power of Attorney PDF</a>
+    </div>
+
     <script>
         function toggleContent(contentId) {
             const content = document.getElementById(contentId);
@@ -146,6 +133,11 @@
             }
         }
     </script>
+        <div class="link-container">
+            <a href="../index.html">Back to Main Page</a>
+        </div>
+    
+        <script src="../js/script.js"></script>
 </body>
 </html>
 ``
